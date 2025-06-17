@@ -92,5 +92,9 @@ create_desktop_file "Tutanota" "Secure email client" "$BIN_DIR/tutanota" "$ICONS
 
 echo "Desktop files have been created in $APPS_DIR"
 
+# Update desktop database
+echo "Updating desktop database..."
+sudo update-desktop-database "$APPS_DIR"
+
 
 
